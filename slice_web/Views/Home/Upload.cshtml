@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "ファイルアップロード";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">File select & upload !</h1>
+</div>
+
+<div class="row">
+
+
+    <form id="uploadForm">
+        <div class="col-md-12">
+            <!--<button type="button" class="btn btn-outline-primary">Select File</button>-->
+            <input type="file" name="file">
+        </div>
+
+        <button type="button" onclick="fileUpload()">Upload!</button>
+    </form>
+
+</div>
+
+<div class="row mt-3">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Panch! Panch!</td>
+                <td>170MB</td>
+                <td>未送信</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Kick! Kick!</td>
+                <td>300 MB</td>
+                <td>未送信</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+@section Scripts{
+
+<script>
+
+    function fileUpload() {
+
+        // POSTでアップロード
+        $.ajax({
+            url: '@Url.Action("Upload")',
+            type: "POST",
+            data: new FormData($('#uploadForm').get(0)),
+            cache: false,
+            contentType: false,
+            processData: false,
+            dataType: "html"
+        })
+            .done(function (data, textStatus, jqXHR) {
+                alert(data);
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                alert("fail");
+            });
+    }
+
+</script>
+
+}
