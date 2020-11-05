@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KMS\\source\\repos\\slice_web\\slice_web\\slice_web.csproj": {}
+    "C:\\Users\\takas\\source\\repos\\slice_web\\slice_web\\slice_web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KMS\\source\\repos\\slice_web\\slice_web\\slice_web.csproj": {
+    "C:\\Users\\takas\\source\\repos\\slice_web\\slice_web\\slice_web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KMS\\source\\repos\\slice_web\\slice_web\\slice_web.csproj",
+        "projectUniqueName": "C:\\Users\\takas\\source\\repos\\slice_web\\slice_web\\slice_web.csproj",
         "projectName": "slice_web",
-        "projectPath": "C:\\Users\\KMS\\source\\repos\\slice_web\\slice_web\\slice_web.csproj",
-        "packagesPath": "C:\\Users\\KMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KMS\\source\\repos\\slice_web\\slice_web\\obj\\",
+        "projectPath": "C:\\Users\\takas\\source\\repos\\slice_web\\slice_web\\slice_web.csproj",
+        "packagesPath": "C:\\Users\\takas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\takas\\source\\repos\\slice_web\\slice_web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\KMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
